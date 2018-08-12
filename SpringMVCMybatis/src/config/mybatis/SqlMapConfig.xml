@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--全局setting，根据需要进行添加-->
+
+    <!-- 定义 别名，设置之后，如需要找po下的Items，一般写成po.Items，定义之后，则为Items
+    针对较长的路径时效果明显-->
+    <typeAliases>
+        <!-- 批量别名定义 指定包路径，自动扫描包下边的pojo，定义别名，别名默认为类名（首字母小写或大写） -->
+        <package name="po" />
+    </typeAliases>
+
+
+    <!--由于使用了spring和mybatis整合的mapper扫描器MapperScannerConfigurer-->
+    <!--这里就不用配置了。扫描器在spring的配置文件springmvc.xml中-->
+    <!--<mappers>-->
+    <!--<package name="mapper"/>-->
+    <!--</mappers>-->
+
+</configuration>
