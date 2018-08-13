@@ -8,5 +8,5 @@ import java.util.List;
 public interface ItemsService {
 
     //商品查询列表
-    public List<ItemsCustom> findItemsList(ItemsQueryVo itemsQueryVo) throws Exception;
+    List<ItemsCustom> findItemsList(ItemsQueryVo itemsQueryVo) throws Exception;
 }
